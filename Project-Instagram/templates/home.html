@@ -1,0 +1,272 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UtF-8">
+    <meta http=-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+    <title>Instagram UI</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-wrapper">
+    <meta charset="UtF-8">
+            <img src="./static/img/logo.PNG" class="brand-img">
+            <input type="text" class="search-box" placeholder="Search">
+            <div class="nav-items">
+                <img src="./static/img/home.PNG" class="icon">
+                <img src="./static/img/messenger.PNG" class="icon">
+                <img src="./static/img/go.png" class="icon">
+                <img src="./static/img/explore.PNG" class="icon">
+                <img src="./static/img/like.PNG" class="icon">
+                <a href="/page"><img src="https://images.unsplash.com/photo-1513721032312-6a18a42c8763?w=152&h=152&fit=crop&crop=faces" class="icon"></a>
+                <div class="icon user-profile">
+
+                </div>
+            </div>
+        </div>
+
+         
+    </nav>
+
+    <section class="main">
+        <div class="wrapper">
+            <div class="left-col">
+                <div class="status-wrapper">
+                    <div class="status">
+                        <div class="profile-pic"> <img src="./static/img/cover 1.png" onmouseover="rounda(this)" onmouseout="roundb(this)"></div>
+                            <p class="username">User1</p>
+                    </div>
+                    <div class="status">
+                        <div class="profile-pic"> <img src="./static/img/cover 2.png" onmouseover="rounda(this)" onmouseout="roundb(this)"></div>
+                            <p class="username">User2</p>
+                    </div>
+                    <div class="status">
+                        <div class="profile-pic"> <img src="./static/img/cover 3.png" onmouseover="rounda(this)" onmouseout="roundb(this)"></div>
+                            <p class="username">user3</p>
+                    </div>
+                    <div class="status">
+                        <div class="profile-pic"> <img src="./static/img/cover 4.png" onmouseover="rounda(this)" onmouseout="roundb(this)"></div>
+                            <p class="username">User4</p>
+                    </div>
+                    <div class="status">
+                        <div class="profile-pic"> <img src="./static/img/cover 5.png" onmouseover="rounda(this)" onmouseout="roundb(this)"></div>
+                            <p class="username">User5</p>
+                    </div>
+                    <div class="status">
+                        <div class="profile-pic"> <img src="./static/img/cover 6.png" onmouseover="rounda(this)" onmouseout="roundb(this)"></div>
+                            <p class="username">User6</p>
+                    </div>
+                    <div class="status">
+                        <div class="profile-pic"> <img src="./static/img/cover 7.png" onmouseover="rounda(this)" onmouseout="roundb(this)"></div>
+                            <p class="username">User7</p>
+                    </div>
+                    
+                 
+                </div>
+                <div class="post">
+                    <div class="info">
+                        <div class="user">
+                            <div class="profile-pic"><img src="static/img/cover 1.png" alt=""></div>
+                            <p class="username">Person1</p>
+                        </div>
+                        <img src="static/img/option.PNG" class="options" alt="">
+                    </div>
+                    <img id="image" src="static/img/cover 1.png" class="post-image" alt="" onmouseover="big(this)" onmouseout="sm(this)">
+                    <div class="post-content">
+                        <div class="reaction-wrapper">
+                            <img src="static/img/like.PNG" class="icon" alt="">
+                            <img src="static/img/comment.PNG" class="icon" alt="">
+                            <img src="static/img/send.PNG" class="icon" alt="">
+                            <img src="static/img/save.PNG" class="save icon" alt="">
+                        </div>
+                        <p class="likes">1,012 likes</p>
+                        <p class="description"><span>username </span>“Music is the language of the spirit. It opens the secret of life bringing peace, abolishing strife.”</p>
+                        <p class="post-time">2 minutes ago</p>
+                    </div>
+                    <div class="comment-wrapper">
+                        <img src="static/img/smile.PNG" class="icon" alt="">
+                        <input type="text" class="comment-box" placeholder="Add a comment">
+                        <button class="comment-btn">post</button>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="info">
+                        <div class="user">
+                            <div class="profile-pic"><img src="static/img/cover 2.png" alt=""></div>
+                            <p class="username">Person2</p>
+                        </div>
+                        <img src="static/img/option.PNG" class="options" alt="">
+                    </div>
+                    <img src="static/img/cover 2.png" class="post-image" alt=""  onmouseover="big(this)" onmouseout="sm(this)">
+                    <div class="post-content">
+                        <div class="reaction-wrapper">
+                            <img src="static/img/like.PNG" class="icon" alt="">
+                            <img src="static/img/comment.PNG" class="icon" alt="">
+                            <img src="static/img/send.PNG" class="icon" alt="">
+                            <img src="static/img/save.PNG" class="save icon" alt="">
+                        </div>
+                        <p class="likes">1,012 likes</p>
+                        <p class="description"><span>username </span>  “Music is the language of the spirit. It opens the secret of life bringing peace, abolishing strife.”</p>
+                        <p class="post-time">2 minutes ago</p>
+                    </div>
+                    <div class="comment-wrapper">
+                        <img src="static/img/smile.PNG" class="icon" alt="">
+                        <input type="text" class="comment-box" placeholder="Add a comment">
+                        <button class="comment-btn">post</button>
+                    </div>
+                </div>      
+                <div class="post">
+                    <div class="info">
+                        <div class="user">
+                            <div class="profile-pic"><img src="static/img/cover 2.png" alt="">
+                            </div>
+                            <p class="username">Person3</p>
+                        </div>
+                        <img src="static/img/option.PNG" class="options" alt="">
+                    </div>
+                    <img src="static/img/cover 3.png" class="post-image" alt=""  onmouseover="big(this)" onmouseout="sm(this)">
+                    <div class="post-content">
+                        <div class="reaction-wrapper">
+                            <img src="static/img/like.PNG" class="icon" alt="">
+                            <img src="static/img/comment.PNG" class="icon" alt="">
+                            <img src="static/img/send.PNG" class="icon" alt="">
+                            <img src="static/img/save.PNG" class="save icon" alt="">
+                        </div>
+                        <p class="likes">1,012 likes</p>
+                        <p class="description"><span>username </span>  “Music is the language of the spirit. It opens the secret of life bringing peace, abolishing strife.”</p>
+                        <p class="post-time">2 minutes ago</p>
+                    </div>
+                    <div class="comment-wrapper">
+                        <img src="static/img/smile.PNG" class="icon" alt="">
+                        <input type="text" class="comment-box" placeholder="Add a comment">
+                        <button class="comment-btn">post</button>
+                    </div>
+                </div>   
+                <div class="post">
+                    <div class="info">
+                        <div class="user">
+                            <div class="profile-pic"><img src="static/img/cover 2.png" alt=""></div>
+                            <p class="username">Person4</p>
+                        </div>
+                        <img src="static/img/option.PNG" class="options" alt="">
+                    </div>
+                    <img src="static/img/cover 4.png" class="post-image" alt=""  onmouseover="big(this)" onmouseout="sm(this)">
+                    <div class="post-content">
+                        <div class="reaction-wrapper">
+                            <img src="static/img/like.PNG" class="icon" alt="">
+                            <img src="static/img/comment.PNG" class="icon" alt="">
+                            <img src="static/img/send.PNG" class="icon" alt="">
+                            <img src="static/img/save.PNG" class="save icon" alt="">
+                        </div>
+                        <p class="likes">1,012 likes</p>
+                        <p class="description"><span>username </span> “Music is the language of the spirit. It opens the secret of life bringing peace, abolishing strife.”</p>
+                        <p class="post-time">2 minutes ago</p>
+                    </div>
+                    <div class="comment-wrapper">
+                        <img src="static/img/smile.PNG" class="icon" alt="">
+                        <input type="text" class="comment-box" placeholder="Add a comment">
+                        <button class="comment-btn">post</button>
+                    </div>
+                </div>       
+        
+                  
+                   
+            </div>
+            <div class="right-col">
+                <div class="profile-card">
+                    <div class="profile-pic">
+                        <img src="static/img/profile-pic.png" alt="" onmouseover="rounda(this)"onmouseout="roundb(this)" >
+                    </div>
+                    <div>
+                        <p class="username">abc_12</p>
+                        <p class="sub-text">Person</p>
+                    </div>
+                    <button type="button" class="action-btn">switch</button>
+                </div>
+                <p class="suggestion-text">Suggestions for you</p>
+                <div class="profile-card">
+                    <div class="profile-pic">
+                        <img src="static/img/cover 9.png" alt="" onmouseover="rounda(this)"onmouseout="roundb(this)">
+                    </div>
+                    <div>
+                        <p class="username">New-person-1</p>
+                        <p class="sub-text">followed bu user</p>
+                    </div>
+                    <button class="action-btn">follow</button>
+                </div>
+                <div class="profile-card">
+                    <div class="profile-pic">
+                        <img src="static/img/cover 10.png" alt=""onmouseover="rounda(this)"onmouseout="roundb(this)">
+                    </div>
+                    <div>
+                        <p class="username">New-person-2</p>
+                        <p class="sub-text">followed bu user</p>
+                    </div>
+                    <button class="action-btn">follow</button>
+                </div>
+                <div class="profile-card">
+                    <div class="profile-pic">
+                        <img src="static/img/cover 11.png" alt="" onmouseover="rounda(this)"onmouseout="roundb(this)">
+                    </div>
+                    <div>
+                        <p class="username">New-person-3</p>
+                        <p class="sub-text">followed bu user</p>
+                    </div>
+                    <button class="action-btn">follow</button>
+                </div>
+                <div class="profile-card">
+                    <div class="profile-pic">
+                        <img src="static/img/cover 12.png" alt="" onmouseover="rounda(this)"onmouseout="roundb(this)">
+                    </div>
+                    <div>
+                        <p class="username">New-person-4</p>
+                        <p class="sub-text">followed bu user</p>
+                    </div>
+                    <button class="action-btn">follow</button>
+                </div>
+                <div class="profile-card">
+                    <div class="profile-pic">
+                        <img src="static/img/cover 13.png" alt="" onmouseover="rounda(this)" onmouseout="roundb(this)">
+                    </div>
+                    <div>
+                        <p class="username">New-person-5</p>
+                        <p class="sub-text">followed bu user</p>
+                    </div>
+                    <button class="action-btn">follow</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<script>
+function big(x)
+{
+    x.style.height="103%%";
+    x.style.width="103%";
+
+}
+function sm(x)
+{
+    x.style.height="100%%";
+    x.style.width="100%";
+
+}
+
+function rounda(x)
+{
+    x.style.height="106%%";
+    x.style.width="106%"  
+}
+function roundb(x)
+{
+    x.style.height="100%%";
+    x.style.width="100%"  
+}
+
+
+</script>
+
+</body>
+</html>

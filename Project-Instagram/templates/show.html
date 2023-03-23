@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+table,th,td
+{
+border:1px solid black;
+border-collapse:collapse;
+}
+
+</style>
+</head>
+<body>
+<h2>User Signup Details</h2>
+
+
+
+
+  <table border="1">
+    <tr>
+        <th>Username</th>
+        <th>fullname</th>
+        <th>username</th>
+        <th>password</th>
+    </tr>
+    {%for i in data2%}
+    <tr>
+        <td>{{i.email}}</td>
+        <td>{{i.fullname}}</td>
+        <td>{{i.username}}</td>
+        <td>{{i.password}}</td>
+        
+    </tr>
+    {%endfor%}
+</table>
+  
+</table><br><br>
+
+
+
+</body>
+</html> 
